@@ -66,6 +66,16 @@ angular.module('signupApp', ['ionic','ionic-toast','ionic-datepicker'])
     }
   })
 
+  .state('sidemenus.playlists',{
+    url: '/playlists',
+    views:{
+      'menuContent':{
+        templateUrl: 'templates/playlists.html'
+        //controller: 'playlistsCtrl'
+      }
+    }
+  })
+
   
 
   $urlRouterProvider.otherwise('/sidemenus/profile');
